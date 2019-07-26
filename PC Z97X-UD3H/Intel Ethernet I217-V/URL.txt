@@ -1,0 +1,2 @@
+https://github.com/Mieze/IntelMausiEthernet
+https://bitbucket.org/RehabMan/os-x-intel-network
