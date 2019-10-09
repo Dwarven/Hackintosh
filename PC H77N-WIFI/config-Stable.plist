@@ -248,14 +248,10 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-10.8-AppleHDA-Realtek-ALC892</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				ixnUEQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
@@ -266,14 +262,10 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-AppleHDA-Resources-xml&gt;zml-(cloverALC-all_codecs)</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				eG1sLnps
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
@@ -284,14 +276,10 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-10.12-AppleHDA-Realtek-ALC...(cloverALC-all_codecs)</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				ihnUEQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
 				<string>10.12.x,10.13.x,10.14.x</string>
 				<key>Name</key>
@@ -304,14 +292,10 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-10.11-AppleHDA-Realtek-ALC...(cloverALC-all_codecs)</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				gxnUEQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
 				<string>10.11.x</string>
 				<key>Name</key>
