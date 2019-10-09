@@ -14,14 +14,77 @@
 			<dict>
 				<key>FixRegions</key>
 				<true/>
+				<key>FixShutdown</key>
+				<true/>
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
-			<key>ReuseFFFF</key>
-			<false/>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC1 to EH01</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC2 to EH02</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change GFX0 to IGPU</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0ZYMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					SUdQVQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change SAT0 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					U0FUMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					U0FUQQ==
+					</data>
+				</dict>
+			</array>
 		</dict>
 		<key>DropTables</key>
 		<array>
+			<dict>
+				<key>Signature</key>
+				<string>MATS</string>
+			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
@@ -39,10 +102,14 @@
 				<string>CpuPm</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>
 		<dict>
+			<key>DoubleFirstState</key>
+			<true/>
 			<key>DropOem</key>
 			<false/>
 			<key>Generate</key>
@@ -79,6 +146,11 @@
 		<key>XMPDetection</key>
 		<false/>
 	</dict>
+	<key>BootGraphics</key>
+	<dict>
+		<key>UIScale</key>
+		<integer>2</integer>
+	</dict>
 	<key>CPU</key>
 	<dict>
 		<key>Type</key>
@@ -91,14 +163,14 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>1</integer>
+			<integer>5</integer>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
 			<true/>
 			<key>Inject</key>
@@ -119,40 +191,21 @@
 			<integer>8</integer>
 		</dict>
 		<key>ScreenResolution</key>
-		<string>1920x1080</string>
+		<string>3840x2160</string>
 		<key>Theme</key>
-		<string>gold_clover</string>
+		<string>bootcamp2.0</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>EDID</key>
-		<dict>
-			<key>Custom</key>
-			<data>
-			AP///////wAEadIj90gBABQXAQOAMx14KtlFolVNoCcSUFS37wDR
-			wIFAgYCVALMAcU+BwIEAAjqAGHE4LUBYLEUA/R4RAAAeAAAA/wBE
-			NUxNVEYwODQyMTUKAAAA/QAySxhTEQAKICAgICAgAAAA/ABBU1VT
-			IFZTMjM5CiAgAZE=
-			</data>
-		</dict>
-		<key>Inject</key>
-		<dict>
-			<key>ATI</key>
-			<false/>
-			<key>Intel</key>
-			<false/>
-			<key>NVidia</key>
-			<false/>
-		</dict>
-		<key>NvidiaSingle</key>
-		<false/>
+		<key>RadeonDeInit</key>
+		<true/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleIntelCPUPM</key>
-		<false/>
+		<true/>
 		<key>AppleRTC</key>
-		<false/>
+		<true/>
 		<key>Debug</key>
 		<false/>
 		<key>KernelCpu</key>
@@ -160,7 +213,7 @@
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
-		<false/>
+		<true/>
 		<key>KernelXCPM</key>
 		<false/>
 		<key>KextsToPatch</key>
@@ -168,14 +221,10 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-10.8-AppleHDA-Realtek-ALC1150</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				ixnUEQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
@@ -186,14 +235,10 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-AppleHDA-Resources-xml&gt;zml-(cloverALC-all_codecs)</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				eG1sLnps
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
@@ -204,16 +249,12 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-10.12-AppleHDA-Realtek-ALC...(cloverALC-all_codecs)</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				ihnUEQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
-				<string>10.12.x,10.13.x</string>
+				<string>10.12.x,10.13.x,10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
@@ -224,14 +265,10 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-10.11-AppleHDA-Realtek-ALC...(cloverALC-all_codecs)</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				gxnUEQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
 				<string>10.11.x</string>
 				<key>Name</key>
@@ -239,24 +276,6 @@
 				<key>Replace</key>
 				<data>
 				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Trim</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				QVBQTEUgU1NEAA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAA==
 				</data>
 			</dict>
 		</array>
@@ -306,8 +325,6 @@
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
-		<true/>
-		<key>NvidiaWeb</key>
 		<true/>
 	</dict>
 </dict>
