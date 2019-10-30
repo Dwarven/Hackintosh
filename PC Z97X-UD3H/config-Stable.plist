@@ -163,7 +163,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>5</integer>
+			<integer>2</integer>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -216,69 +216,6 @@
 		<true/>
 		<key>KernelXCPM</key>
 		<false/>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>t1-10.8-AppleHDA-Realtek-ALC1150</string>
-				<key>Find</key>
-				<data>
-				ixnUEQ==
-				</data>
-				<key>Name</key>
-				<string>com.apple.driver.AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAnsEA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>t1-AppleHDA-Resources-xml&gt;zml-(cloverALC-all_codecs)</string>
-				<key>Find</key>
-				<data>
-				eG1sLnps
-				</data>
-				<key>Name</key>
-				<string>com.apple.driver.AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				em1sLnps
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>t1-10.12-AppleHDA-Realtek-ALC...(cloverALC-all_codecs)</string>
-				<key>Find</key>
-				<data>
-				ihnUEQ==
-				</data>
-				<key>MatchOS</key>
-				<string>10.12.x,10.13.x,10.14.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>t1-10.11-AppleHDA-Realtek-ALC...(cloverALC-all_codecs)</string>
-				<key>Find</key>
-				<data>
-				gxnUEQ==
-				</data>
-				<key>MatchOS</key>
-				<string>10.11.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -290,33 +227,49 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>09/03/2013</string>
+		<string>07/24/2019</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM142.88Z.0118.B00.1309031249</string>
+		<string>IM142.88Z.F000.B00.1907241133</string>
 		<key>Board-ID</key>
 		<string>Mac-27ADBB7B4CEE8E61</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>D25324207CDF8YLJC</string>
 		<key>BoardType</key>
 		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
 		<key>ChassisAssetTag</key>
 		<string>iMac-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>13</string>
+		<string>0x0D</string>
+		<key>EfiVersion</key>
+		<string>140.0.0.0.0</string>
 		<key>Family</key>
 		<string>iMac</string>
+		<key>FirmwareFeatures</key>
+		<string>0xE00FE137</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<false/>
+		<key>PlatformFeature</key>
+		<string>0x01</string>
 		<key>ProductName</key>
 		<string>iMac14,2</string>
 		<key>SerialNumber</key>
 		<string>C02LGE6UF8JC</string>
-		<key>Trust</key>
-		<false/>
+		<key>SmUUID</key>
+		<string>C36BDEB0-F655-4252-AAA2-090BD9E0B738</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
