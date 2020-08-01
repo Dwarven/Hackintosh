@@ -194,7 +194,7 @@
 			<key>Entries</key>
 			<true/>
 			<key>Legacy</key>
-			<string>First</string>
+			<false/>
 			<key>Linux</key>
 			<false/>
 			<key>Tool</key>
