@@ -4,85 +4,6 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
-		<key>SSDT</key>
-		<dict>
-			<key>DropOem</key>
-			<false/>
-			<key>DoubleFirstState</key>
-			<false/>
-			<key>Generate</key>
-			<dict>
-				<key>APSN</key>
-				<false/>
-				<key>PluginType</key>
-				<false/>
-				<key>PStates</key>
-				<false/>
-				<key>APLF</key>
-				<false/>
-				<key>CStates</key>
-				<false/>
-			</dict>
-		</dict>
-		<key>DSDT</key>
-		<dict>
-			<key>Patches</key>
-			<array>
-				<dict>
-					<key>Find</key>
-					<data>RUhDMQ==</data>
-					<key>Replace</key>
-					<data>RUgwMQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>change EHC1 to EH01</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>RUhDMg==</data>
-					<key>Replace</key>
-					<data>RUgwMg==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>change EHC2 to EH02</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>R0ZYMA==</data>
-					<key>Replace</key>
-					<data>SUdQVQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>U0FUMA==</data>
-					<key>Replace</key>
-					<data>U0FUQQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
-				</dict>
-			</array>
-			<key>Fixes</key>
-			<dict>
-				<key>FixRegions</key>
-				<false/>
-				<key>FixShutdown</key>
-				<false/>
-			</dict>
-			<key>Name</key>
-			<string>DSDT.aml</string>
-			<key>DropOEM_DSM</key>
-			<false/>
-			<key>Debug</key>
-			<false/>
-		</dict>
 		<key>HaltEnabler</key>
 		<false/>
 		<key>DropTables</key>
@@ -108,27 +29,19 @@
 				<string>SSDT</string>
 			</dict>
 		</array>
-		<key>FixHeaders</key>
-		<false/>
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Legacy</key>
-		<string>PBR</string>
-		<key>Secure</key>
-		<false/>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
-		<key>Debug</key>
-		<false/>
-		<key>Arguments</key>
-		<string>-v kext-dev-mode=1</string>
-		<key>XMPDetection</key>
-		<false/>
-		<key>Timeout</key>
-		<integer>1</integer>
 		<key>DefaultVolume</key>
 		<string>Hackintosh</string>
+		<key>Arguments</key>
+		<string>kext-dev-mode=1</string>
+		<key>Legacy</key>
+		<string>PBR</string>
+		<key>Timeout</key>
+		<integer>1</integer>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -162,12 +75,23 @@
 	<dict>
 		<key>NoDefaultProperties</key>
 		<false/>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
+			<dict>
+				<key>layout-id</key>
+				<data>AgAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AwASFg==</data>
+			</dict>
+		</dict>
 		<key>Audio</key>
 		<dict>
 			<key>ResetHDA</key>
-			<true/>
-			<key>Inject</key>
-			<integer>2</integer>
+			<false/>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -183,15 +107,8 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>Inject</key>
-		<dict>
-			<key>Intel</key>
-			<true/>
-		</dict>
 		<key>RadeonDeInit</key>
 		<true/>
-		<key>ig-platform-id</key>
-		<string>0x16120003</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -213,18 +130,18 @@
 	<key>RtVariables</key>
 	<dict>
 		<key>MLB</key>
-		<string>C02917130GUJ0PG1F</string>
+		<string>DGK744403QXGQRY8C</string>
 		<key>ROM</key>
 		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>FirmwareFeatures</key>
-		<string>0xFC0FE176</string>
+		<string>0xFC0FE137</string>
 		<key>Board-ID</key>
-		<string>Mac-BE088AF8C5EB4FA2</string>
+		<string>Mac-FFE5EF870D7BA81A</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF7F</string>
+		<string>0xFF1FFF3F</string>
 		<key>BoardVersion</key>
 		<string>1.0</string>
 		<key>Manufacturer</key>
@@ -232,37 +149,37 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>BiosVersion</key>
-		<string>IM183.88Z.F000.B00.2006161818</string>
+		<string>IM162.88Z.F000.B00.2006111037</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisAssetTag</key>
 		<string>iMac-Aluminum</string>
 		<key>PlatformFeature</key>
-		<string>0x00</string>
+		<string>0x03</string>
 		<key>Family</key>
 		<string>iMac</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02917130GUJ0PG1F</string>
+		<string>DGK744403QXGQRY8C</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>ProductName</key>
-		<string>iMac18,3</string>
+		<string>iMac16,2</string>
 		<key>SmUUID</key>
-		<string>4501C17C-CC10-483C-AEB4-6E5937DFD33C</string>
+		<string>6A4D7720-D1CB-4075-90BB-268B5C014F00</string>
 		<key>Mobile</key>
 		<false/>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>EfiVersion</key>
-		<string>428.0.0.0.0</string>
+		<string>236.0.0.0.0</string>
 		<key>SerialNumber</key>
-		<string>C02TW01BJ1GT</string>
+		<string>C02QD47CGG78</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>BiosReleaseDate</key>
-		<string>06/16/2020</string>
+		<string>06/11/2020</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
