@@ -56,9 +56,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 						<key>name</key>
 						<string>PR11</string>
 						<key>port</key>
+						<data>
+						AQAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						AQAAAA==
 						</data>
@@ -102,9 +108,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 						<key>name</key>
 						<string>PR21</string>
 						<key>port</key>
+						<data>
+						AQAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						AQAAAA==
 						</data>
@@ -148,9 +160,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 						<key>name</key>
 						<string>HS05</string>
 						<key>port</key>
+						<data>
+						BQAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						BQAAAA==
 						</data>
@@ -159,9 +177,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 						<key>name</key>
 						<string>HS06</string>
 						<key>port</key>
+						<data>
+						BgAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						BgAAAA==
 						</data>
@@ -170,9 +194,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 						<key>name</key>
 						<string>HS08</string>
 						<key>port</key>
+						<data>
+						CAAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						CAAAAA==
 						</data>
@@ -181,9 +211,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 						<key>name</key>
 						<string>HS11</string>
 						<key>port</key>
+						<data>
+						CwAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						CwAAAA==
 						</data>
@@ -192,9 +228,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 						<key>name</key>
 						<string>HS12</string>
 						<key>port</key>
+						<data>
+						DAAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						DAAAAA==
 						</data>
@@ -203,9 +245,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 						<key>name</key>
 						<string>HS13</string>
 						<key>port</key>
+						<data>
+						DQAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						DQAAAA==
 						</data>
@@ -214,9 +262,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 						<key>name</key>
 						<string>HS14</string>
 						<key>port</key>
+						<data>
+						DgAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						DgAAAA==
 						</data>
@@ -258,9 +312,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>HS01</string>
 						<key>port</key>
+						<data>
+						AQAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						AQAAAA==
 						</data>
@@ -269,9 +329,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>HS02</string>
 						<key>port</key>
+						<data>
+						AgAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						AgAAAA==
 						</data>
@@ -280,9 +346,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>HS03</string>
 						<key>port</key>
+						<data>
+						AwAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						AwAAAA==
 						</data>
@@ -291,9 +363,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>HS04</string>
 						<key>port</key>
+						<data>
+						BAAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						BAAAAA==
 						</data>
@@ -302,9 +380,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>usb-port-type</key>
+						<integer>0</integer>
 						<key>name</key>
 						<string>HS07</string>
 						<key>port</key>
+						<data>
+						BwAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						BwAAAA==
 						</data>
@@ -313,9 +397,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>HS09</string>
 						<key>port</key>
+						<data>
+						CQAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						CQAAAA==
 						</data>
@@ -324,9 +414,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>HS10</string>
 						<key>port</key>
+						<data>
+						CgAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						CgAAAA==
 						</data>
@@ -335,9 +431,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>SS01</string>
 						<key>port</key>
+						<data>
+						EAAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						EAAAAA==
 						</data>
@@ -346,9 +448,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>SS02</string>
 						<key>port</key>
+						<data>
+						EQAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						EQAAAA==
 						</data>
@@ -357,9 +465,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>SS03</string>
 						<key>port</key>
+						<data>
+						EgAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						EgAAAA==
 						</data>
@@ -368,9 +482,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>SS04</string>
 						<key>port</key>
+						<data>
+						EwAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						EwAAAA==
 						</data>
@@ -379,9 +499,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>SS05</string>
 						<key>port</key>
+						<data>
+						FAAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						FAAAAA==
 						</data>
@@ -390,9 +516,15 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>usb-port-type</key>
+						<integer>3</integer>
 						<key>name</key>
 						<string>SS06</string>
 						<key>port</key>
+						<data>
+						FQAAAA==
+						</data>
+						<key>usb-port-number</key>
 						<data>
 						FQAAAA==
 						</data>
